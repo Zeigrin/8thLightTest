@@ -1,28 +1,116 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>8Th Light Test</title>
+        <title>Oscoda Township, a slice of pure michigan</title>
         <link rel="stylesheet" href="Master.css">
+            
+            <link rel="stylesheet" href="./Scripts/jqm/jquery.mobile-1.4.5.min.css" />
+            <script src="./Scripts/jqm/jquery-1.11.1.min.js"></script>
+            <script src="./Scripts/jqm/jquery.mobile-1.4.5.min.js"></script>
+            
+            
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
     </head>
 <body>
 
-<div id="Container">
-
-<header id='PageHeader'>
+<header id="PageHeader">
+    
+    <div class="HeaderWrap">
+    
+    <menu id="MobileMenu">
+        <img src="./Scripts/jqm/images/icons-png/bars-white.png" class="MobileMenuIcon" />
+        <p class="MobileMenuText">Menu</p>
+    </menu>
+        
+    <menu>
+        <ul id="HeaderMenu">
+            <a href="#" class="MenuLink"><li class="MenuItem">Hotels and Resorts</li></a>
+            <a href="#" class="MenuLink"><li class="MenuItem">Local Cuisine</li></a>        
+            <a href="#" class="MenuLink"><li class="MenuItem">Recreation</li></a>
+            <a href="#" class="MenuLink"><li class="MenuItem">Tour Guide</li></a>
+        </ul>
+    </menu>
+    
+    <a href="#"><div id="Logo"></div></a>
+    
+    <form class="BookingForm">
+        
+        <h1 class="FormHeading">Book a trip!</h1>
+        
+        <select name="Hotels" class="DropMenu">
+            <option value="Default">Choose a hotel</option>
+            <option value="Rest All Inn">Rest All Inn</option>
+            <option value="AmericInn Lodge & Suites Oscoda">AmericInn Lodge & Suites Oscoda</option>
+            <option value="Lake Trail Resort">Lake Trail Resort</option>
+            <option value="Aspen Motor Inn">Aspen Motor Inn</option>
+            <option value="Barefoot Beach Resort">Barefoot Beach Resort</option>
+            <option value="Wolverine Court Resort & Motel">Wolverine Court Resort & Motel</option>
+            <option value="Thomas Parkside Cottages">Thomas Parkside Cottages</option>
+            <option value="Nor' East Shore Resort">Nor' East Shore Resort</option>
+            <option value="Blue Horizon Court">Blue Horizon Court</option>
+            <option value="Stefan's R & R Resort">Stefan's R & R Resort</option>
+            <option value="Lillar's Landing Resort">Lillar's Landing Resort</option>
+            <option value="Mai Tiki Resort">Mai Tiki Resort</option>
+            <option value="Ausable River Resort">Ausable River Resort</option>
+            <option value="Captains Landing Resort">Captains Landing Resort</option>
+            <option value="Pines On the Lake">Pines On the Lake</option>
+            <option value="Stadler's Spacious Sands">Stadler's Spacious Sands</option>
+            <option value="Anchorage Cottages">Anchorage Cottages</option>
+            <option value="Sandcastle Beach Resort LLC">Sandcastle Beach Resort LLC</option>
+        </select>
+        
+        <input type="text" data-role="date" class="Checkin" value="Check in date">
+            
+        <label class="BetweenText">To</label>
+            
+        <input type="text" data-role="date" class="Checkout" value="Check out date">
+                
+        
+        <button type="submit" value="Book" class="Book">Start booking this trip!</button>
+    </form>
+    
+    </div>
     
 </header>
 
+<section ></section>
 
-<section id='Page'>
-           <h1>Coming soon</h1>
+<div id="Container">
+
+<section id="Page">
+           <h1 class="FrontHeading">Top Atractions!</h1>
 </section>
 
+<section id="Badge" class="BadgeImage1">
+    <article id="BadgeTextArea">
+        <header><h1 class="BadgeHeading">Celebrate Paul Bunyon days!</h1></header>
+        <p class="BadgeText">Paul Bunyan is a lumberjack character in North American and Michigan folklore. One of the most famous and popularfolklore heroes, he is usually described as a giant as well as a lumberjack possessed of amazing skills. In most tales, he is accompanied Babe, his famous blue ox.
+The State of Michigan has designated Oscoda as the official home of Paul Bunyan. Oscoda, Michigan celebrates in September with the Paul Bunyan Days Festival.
+Along with lots of food, drink and carnival rides, the festival includes Games, BBQ Competition, a Classic Car Show, Motorcycle Show, Chainsaw Carving Competition, Paul Bunyan Look-alike Contest, Pie Throwing, Musical Entertainment, Ax Throwing, Log Chopping and free kids games.</p>
+        <a href="#"><p class="BadgeReadLink">Reade more...</p></a>
+    </article>
+</section>
 
-<footer id='PageFooter'> 
-&#169; 2014 - 2015 Jason Kidrowski, all rights reserved.
+<section id="Badge" class="BadgeImage2">
+    <article id="BadgeTextArea">
+        <header><h1 class="BadgeHeading">The Ausable River Canoe Marathon</h1></header>
+        <p class="BadgeText">he AuSable River Canoe Marathon, a.k.a. "The Marathon", is a non-stop canoe race that starts at night with a thrilling LeMans-style running-start to the river in Grayling, MI, and ends 120 miles later near the shores of Lake Huron in Oscoda, MI.  Contestants must navigate the narrow, winding upper stretch in total darkness, as well as stump-filled ponds and the blazing July sun in the lower stretch.  This race is not a recreational canoe float, but a professional, ultra-competitive race with the very best professional paddlers from around North and Central America.  Contestants must be in peak condition in order to complete the race in the allotted time, and to endure the grueling and strenuous physical and mental strains The Marathon demands of the paddlers.</p>
+        <a href="#"><p class="BadgeReadLink">Reade more...</p></a>
+    </article>
+</section>
+
+<section id="Badge"class="BadgeImage3">
+    <article id="BadgeTextArea">
+        <header><h1 class="BadgeHeading">The shores of Lake Huron</h1></header>
+        <p class="BadgeText">Oscoda Beach Park has approximately one-thousand and twenty-five feet (1,025) of Lake Huron frontage and includes a skateboard park, a small basketball court, a band shell, a pavilion, children’s play equipment, picnic tables and grills, benches, a bathhouse with restrooms and a paved parking area and it’s all handicapped accessible. The bathhouse is surrounded by a sunbathing and observation deck with a lighted boardwalk leading to the south along the shoreline and linking to a street-scape pathway originating in the central business district.</p>
+        <a href="#"><p class="BadgeReadLink">Reade more...</p></a>
+    </article>
+</section>
+
+<footer id="PageFooter"> 
+<p>&#169; 2015 Oscoda Township. Designed by: <a href="http://Jasonkidrowski.com">Jason Kidrowski</a></p>
 </footer>
-
 </div>
-
 </body>
 </html>
